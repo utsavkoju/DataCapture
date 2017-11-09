@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:shape="line"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="line"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="1.0px" />
+            <stroke android:width="2.0dip" android:color="@color/slider_color" />
+            <size android:height="2.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="line"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="1.0px" />
+            <stroke android:width="2.0dip" android:color="@color/slider_color_normal" />
+            <size android:height="2.0dip" />
+        </shape>
+    </item>
+</selector>

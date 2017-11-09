@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context="np.org.psi.dhis2.datacapture.ui.fragments.DPOWeeklyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f1f1f1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView android:id="@+id/layout_orgUnit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#404040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/Organisation_Unit" />
+            <Spinner android:id="@+id/input_orgUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <TextView android:id="@+id/layout_week"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#404040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/text_period" />
+            <Spinner android:id="@+id/input_weekNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+            <TextView android:textSize="18sp"
+                android:id="@+id/layout_contact"
+                android:textStyle="bold"
+                android:textColor="#404040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/text_contacts" />
+            <EditText
+                android:textColor="@color/edittext_text_color"
+                android:id="@+id/input_contact"
+                android:background="@drawable/edt_text_bg"
+                android:inputType="text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView android:textSize="18sp"
+                android:id="@+id/layout_referral"
+                android:textStyle="bold"
+                android:textColor="#404040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/text_Referral" />
+            <EditText
+                android:textColor="@color/edittext_text_color"
+                android:id="@+id/input_referral"
+                android:background="@drawable/edt_text_bg"
+                android:inputType="text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView android:textSize="18sp"
+                android:id="@+id/layout_service"
+                android:textStyle="bold"
+                android:textColor="#404040"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/text_IUCD" />
+            <EditText
+                android:textColor="@color/edittext_text_color"
+                android:id="@+id/input_service"
+                android:background="@drawable/edt_text_bg"
+                android:inputType="text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <Button android:textColor="@color/white"
+                    android:id="@+id/btn_save"
+                    android:background="@drawable/btn_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Save"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

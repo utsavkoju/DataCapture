@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/bg_swipe_item_dismiss" />
+    </item>
+    <item android:top="16.0dip">
+        <bitmap android:gravity="center|top" android:src="@drawable/ic_item_swipe_dismiss" />
+    </item>
+</layer-list>

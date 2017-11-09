@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="np.org.psi.dhis2.datacapture.ui.fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.app.FragmentTabHost
+            android:id="@+id/testtabhost1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" >
+
+            <FrameLayout
+                android:id="@+id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.app.FragmentTabHost>
+    </LinearLayout>
+</FrameLayout>
